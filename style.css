@@ -170,8 +170,8 @@ nav{
     Football Highlight
     -------------- */
 
-.Football-hightlight{
-    margin-top: 150px;
+.football-highlight{
+    margin-top: 60px;
 }
 
 .highlight h1{
@@ -249,10 +249,12 @@ footer img{
     Responsive Part (Media Query)
     -------------- */
 
+
+/* --------------
+For Mobile
+-------------- */
+
 @media only screen and (max-width: 688px){
-, footer{
-    display: none;
-}
 
 /* --------------
     Responsive Header
@@ -260,7 +262,6 @@ footer img{
 
 header{
     display: flex;
-    justify-content: center;
 }
 
 nav{
@@ -273,17 +274,14 @@ nav{
 }
 
 .nav-left a:nth-child(6){
+    margin-left: 20px;
     display: inline-block;
     font-size: 28px;
 }
 
 /* --------------
-    Responsive Highlight
+    Responsive Live & Highlight
     -------------- */
-
-.copa{
-
-}
 
 .copa-content{
     width: 100%;
@@ -307,6 +305,10 @@ nav{
 /* --------------
     Responsive Players
     -------------- */
+.football-container{
+    margin-bottom: 60px;
+}
+
 .footballers{
     padding: 0px 20px;
     width: 100%;
@@ -325,9 +327,113 @@ nav{
 }
 
 /* --------------
-    Highlight
+    Responsive Highlight
     -------------- */
+.highlight p{
+    width: 90%;
+}
+
+/* --------------
+    Responsive Footer
+    -------------- */
+
+footer img{
+    width: 300px;
+}
+
+}
+
+/* --------------
+    For Tab / Laptop
+    -------------- */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .Football-hightlight{
+        display: none;
+    }
+
+/* --------------
+    Responsive Header
+    -------------- */
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 90%;
+}
+
+#Global-button{
+    width: 95px;
+    text-align: center;
+}
+
+/* --------------
+    Responsive Live & Highlight
+    -------------- */
+
+    
+.copa-content{
+    width: 100%;
+    flex-direction: column;
+}
+
+.des{
+    text-align: center;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+}
+
+.des h1{
+    width: 100%;
+    font-size: 48px;
+}
+
+.image img{
+    width: 500px;
+}
+
+/* --------------
+Responsive Players
+-------------- */
+.football-container{
+    margin-bottom: 20px;
+}
+
+.footballers{
+    padding: 0px 20px;
+    width: 90%;
+}
+
+.players{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.player{
+    align-items: center;
+    padding: 15px;
+}
+
+.player p{
+    text-align: center;
+}
+
+/* --------------
+Responsive Highlight
+-------------- */
 .highlight p{
     width: 100%;
 }
+
+/* --------------
+    Responsive Footer
+    -------------- */
+
+footer img{
+    width: 400px;
+}
+
+
 }
